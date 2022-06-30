@@ -7,6 +7,6 @@ class PagesController < ApplicationController
   end
 
   def dashboard
-    @users = User.all
+    @users = User.find_valid
   end
 end
